@@ -1284,6 +1284,7 @@ section {
 .doctors .member .member-img {
   position: relative;
   overflow: hidden;
+  width: 200px;
 }
 
 .doctors .member .social {
