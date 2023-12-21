@@ -1,0 +1,502 @@
+.mainTooth {
+    margin: 0;
+    background-color: #75e3ff;
+    /* Set the background color for the entire body */
+    position: relative;
+}
+
+.mySky {
+    position: relative;
+    height: 300px;
+    /* Set the height as per your requirement */
+    overflow: hidden;
+    /* Hide any overflow content */
+
+}
+
+.myTooth {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.body {
+    position: absolute;
+    background-color: #fff;
+}
+
+.bg {
+    position: absolute;
+    background-color: #75e3ff;
+}
+
+.crown01 {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: -20px;
+}
+
+.crown02 {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 20px;
+}
+
+.crown03 {
+    border-radius: 50%;
+    width: 50px;
+    height: 30px;
+    top: -25px;
+    left: 0px;
+}
+
+.crown04 {
+    border-radius: 50%;
+    width: 50px;
+    height: 30px;
+    top: 5px;
+    left: 0px;
+}
+
+.crown05 {
+    top: 15px;
+    left: -15px;
+    width: 40px;
+    height: 70px;
+    border-radius: 30% 40% 70% 70%;
+    transform: rotate(-12deg);
+}
+
+.crown06 {
+    top: 15px;
+    left: 25px;
+    width: 40px;
+    height: 70px;
+    border-radius: 30% 30% 70% 70%;
+    transform: rotate(12deg);
+}
+
+.crown07 {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    top: 35px;
+    left: 15px;
+}
+
+.root01 {
+    top: 55px;
+    left: -10px;
+    width: 24px;
+    height: 70px;
+    border-radius: 40% 40% 100% 500%;
+}
+
+.root02 {
+    top: 55px;
+    left: 35px;
+    width: 24px;
+    height: 70px;
+    border-radius: 40% 40% 500% 100%;
+}
+
+.root04 {
+    width: 13px;
+    height: 13px;
+    top: 73px;
+    left: 18px;
+    border-radius: 50%;
+}
+
+.root03 {
+    width: 15px;
+    height: 15px;
+    top: 64px;
+    left: 17px;
+    border-radius: 50%;
+}
+
+.root05 {
+    top: 50px;
+    left: -12px;
+    width: 20px;
+    height: 40px;
+    border-radius: 100% 100% 100% 500%;
+    transform: rotate(-2deg);
+}
+
+.root06 {
+    top: 50px;
+    left: 42px;
+    width: 20px;
+    height: 40px;
+    border-radius: 40% 40% 500% 100%;
+}
+
+.root07 {
+    top: 60px;
+    left: -3px;
+    width: 20px;
+    height: 40px;
+    border-radius: 50% 30% 30% 50%;
+    transform: rotate(10deg);
+}
+
+.root08 {
+    top: 60px;
+    left: 32px;
+    width: 20px;
+    height: 40px;
+    border-radius: 30% 50% 50% 30%;
+    transform: rotate(-10deg);
+}
+
+.root09 {
+    top: 74px;
+    left: 15px;
+    width: 10px;
+    height: 28px;
+    border-radius: 50% 30% 30% 50%;
+    transform: rotate(11deg);
+}
+
+.root10 {
+    top: 74px;
+    left: 24px;
+    width: 10px;
+    height: 28px;
+    border-radius: 30% 50% 50% 30%;
+    transform: rotate(-11deg);
+}
+
+.face {
+    position: absolute;
+    width: 30px;
+    height: 25px;
+    top: 30px;
+    left: 10px;
+}
+
+.f {
+    position: absolute;
+}
+
+.eye01 {
+    left: 0;
+    top: 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+.eye02 {
+    right: 0;
+    top: 0;
+    width: 6px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+.eye {
+    animation: wink 4s linear infinite;
+}
+
+.mouth {
+    top: 4px;
+    left: 5px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid pink;
+    border-top: 20px solid transparent;
+    border-radius: 50%;
+    transform: rotate(90deg);
+}
+
+@keyframes wink {
+    0% {
+        height: 7px;
+    }
+
+    4% {
+        height: 2px;
+        width: 7px;
+    }
+
+    8% {
+        height: 7px;
+        width: 6px;
+    }
+
+    100% {
+        height: 7px;
+    }
+}
+
+.cl {
+    position: absolute;
+    background-color: #99eaff;
+}
+
+.cloud01 {
+    width: 120px;
+    height: 40px;
+    top: calc(50% - 50px);
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50px;
+    animation: cloud 5s ease-in-out infinite;
+}
+
+.cloud01::before {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #99eaff;
+    top: -18px;
+    left: 20px;
+}
+
+.cloud01::after {
+    content: '';
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #99eaff;
+    top: -30px;
+    left: 48px;
+}
+
+@keyframes cloud {
+    0% {
+        transform: translateY(0) scale(0.4);
+    }
+
+    48% {
+        transform: translateY(10px) scale(0.4);
+    }
+
+    52% {
+        transform: translateY(10px) scale(0.4);
+    }
+
+    100% {
+        transform: translateY(0) scale(0.4);
+    }
+}
+
+.cloud02 {
+    width: 120px;
+    height: 40px;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    margin-right: -180px;
+    border-radius: 50px;
+    animation: cloud02 5s 2s ease-in-out infinite;
+}
+
+.cloud02::before {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #99eaff;
+    top: -18px;
+    left: 20px;
+}
+
+.cloud02::after {
+    content: '';
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #99eaff;
+    top: -30px;
+    left: 48px;
+}
+
+@keyframes cloud02 {
+    0% {
+        transform: translateY(0) scale(0.8);
+    }
+
+    48% {
+        transform: translateY(10px) scale(0.8);
+    }
+
+    52% {
+        transform: translateY(10px) scale(0.8);
+    }
+
+    100% {
+        transform: translateY(0) scale(0.8);
+    }
+}
+
+.cloud03 {
+    width: 120px;
+    height: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: -170px;
+    border-radius: 50px;
+    animation: cloud03 5s 1s ease-in-out infinite;
+}
+
+.cloud03::before {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #99eaff;
+    top: -18px;
+    left: 20px;
+}
+
+.cloud03::after {
+    content: '';
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #99eaff;
+    top: -30px;
+    left: 48px;
+}
+
+@keyframes cloud03 {
+    0% {
+        transform: translateY(0);
+    }
+
+    48% {
+        transform: translateY(10px);
+    }
+
+    52% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.cloud04 {
+    width: 120px;
+    height: 40px;
+    top: 30%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+    animation: cloud04 6s 3s ease-in-out infinite;
+}
+
+.cloud04::before {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #99eaff;
+    top: -18px;
+    left: 20px;
+}
+
+.cloud04::after {
+    content: '';
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #99eaff;
+    top: -30px;
+    left: 48px;
+}
+
+
+@keyframes cloud04 {
+    0% {
+        transform: translateY(0) scale(0.6);
+    }
+
+    48% {
+        transform: translateY(10px) scale(0.6);
+    }
+
+    52% {
+        transform: translateY(10px) scale(0.6);
+    }
+
+    100% {
+        transform: translateY(0) scale(0.6);
+    }
+}
+
+
+
+.cloud05 {
+    width: 120px;
+    height: 40px;
+    top: 70%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+    animation: cloud05 7s 2s ease-in-out infinite;
+}
+
+
+.cloud05::before {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #99eaff;
+    top: -18px;
+    left: 20px;
+}
+
+.cloud05::after {
+    content: '';
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #99eaff;
+    top: -30px;
+    left: 48px;
+}
+
+@keyframes cloud05 {
+    0% {
+        transform: translateY(0) scale(0.8);
+    }
+
+    48% {
+        transform: translateY(10px) scale(0.8);
+    }
+
+    52% {
+        transform: translateY(10px) scale(0.8);
+    }
+
+    100% {
+        transform: translateY(0) scale(0.8);
+    }
+}
