@@ -452,14 +452,49 @@ h6 {
   align-items: flex-end;
 }
 
-#hero .container {
+/* #hero .container {
   text-align: center;
   background: rgba(255, 255, 255, 0.9);
   padding-top: 30px;
   padding-bottom: 30px;
   margin-bottom: 50px;
   border-top: 4px solid #3fbbc0;
+} */
+
+#hero .container {
+  position: relative;
+  text-align: left;
+  /* background: rgba(63, 180, 196, 0.5); */
+  /* background-image: url("../img/slide/tooth.png"); */
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 200px;
+  margin-left: 200px;
+  /* border-top: 4px solid #3fbbc0; */
 }
+
+.tooth {
+  position: absolute;
+  width: 600px;
+  /* Adjust the width as needed */
+  height: auto;
+  /* Maintain aspect ratio, adjust if needed */
+  left: 20vh;
+  opacity: 0.5;
+}
+
+
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+  /* Adjust the alpha value to control darkness */
+}
+
 
 @media (max-width: 1200px) {
   #hero .container {
@@ -469,15 +504,16 @@ h6 {
 }
 
 #hero h2 {
-  color: #2f2f2f;
+  color: white;
   margin-bottom: 20px;
-  font-size: 36px;
+  font-size: 50px;
   font-weight: 700;
 }
 
 #hero p {
   margin: 0 auto 30px auto;
-  color: #555555;
+  padding-right: 30%;
+  color: white;
 }
 
 #hero .carousel-inner .carousel-item {
