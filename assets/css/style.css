@@ -476,6 +476,8 @@ h6 {
 .tooth {
   position: absolute;
   width: 600px;
+  padding-bottom: 2vh;
+
   /* Adjust the width as needed */
   height: auto;
   /* Maintain aspect ratio, adjust if needed */
@@ -1284,7 +1286,7 @@ section {
 .doctors .member .member-img {
   position: relative;
   overflow: hidden;
-  width: 200px;
+  /* width: 250px; */
 }
 
 .doctors .member .social {

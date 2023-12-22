@@ -1,0 +1,77 @@
+.opening-hours-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card#smart-card[data-status="soon"] {
+    background: #f2811e;
+    box-shadow: 0 12px 84px #06adb8;
+    color: #fff;
+}
+
+.card#smart-card[data-status="open"] {
+    background: #1ef28f;
+    box-shadow: 0 12px 84px #88d6b8;
+    color: #121212;
+}
+
+.card#smart-card[data-status="close"] {
+    background: #f21e41;
+    box-shadow: 0 12px 84px #d68892;
+    color: #fff;
+}
+
+
+.card {
+    min-width: 375px;
+
+    display: grid;
+    grid-template-columns: 500px auto;
+
+    padding: 15px;
+    border-radius: 8px;
+
+    font-family: 'circular Std Book', sans-serif;
+    font-size: 18px;
+
+    color: #121212;
+    box-shadow: 0 12px 84px rgba(189, 196, 214, .5);
+
+    user-select: none;
+}
+
+.card#smart-card,
+.card#smart-card .content {
+    justify-content: center;
+}
+
+.card:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.card svg {
+    height: 24px;
+}
+
+.card .feather-calender {
+    margin-top: -3px;
+}
+
+.card .content {
+    display: flex;
+    align-items: center;
+}
+
+.card .content span {
+    margin-left: 8px;
+}
+
+@media (max-width: 768px) {
+    .card {
+        grid-template-columns: 232px auto;
+    }
+
+
+}
