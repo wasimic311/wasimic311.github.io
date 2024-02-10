@@ -25,21 +25,29 @@
 
 
 .card {
-    min-width: 375px;
-
+    min-width: 500px;
+    /* Increase the minimum width of the card */
     display: grid;
-    grid-template-columns: 500px auto;
-
+    grid-template-columns: auto 1fr;
+    /* Adjust grid-template-columns to allocate more space to the second column */
     padding: 15px;
     border-radius: 8px;
-
     font-family: 'circular Std Book', sans-serif;
     font-size: 18px;
-
     color: #121212;
     box-shadow: 0 12px 84px rgba(189, 196, 214, .5);
-
     user-select: none;
+}
+
+.card .content:last-child {
+    justify-self: end;
+    /* Align the content in the last column to the end */
+}
+
+.card .content span {
+    margin-left: 8px;
+    white-space: nowrap;
+    /* Prevent line breaks within the span */
 }
 
 .card#smart-card,
